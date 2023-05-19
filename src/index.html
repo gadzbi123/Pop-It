@@ -3,27 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Witamy na Pop It</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="shortcut icon" href="./assets/img/round.png" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <a href="#">PopIt.pl</a>
+          <div class="nav__list-right nav__list-right--mobile ">
+            <a href="#about">→ O nas</a>
+            <a href="#motivation">→ Motywacja</a>
+            <a href="https://github.com/gadzbi123">→ Kontakt</a>
+          </div>
+        </ul>
+      </nav>
+      <div class="header__container">
+        <div class="header__texts">
+          <h1 class="header__title">POP IT!</h1>
+          <h2 class="header__subtitle">
+            Najlepsze lizaki w Polsce, tylko że nie możesz ich zjeść!
+          </h2>
+          <button class="button button--unique mt-mid">Zamów!</button>
+        </div>
+      </div>
+      <img class="header__image" src="./background.png" alt="" />
+    </header>
+    <div id="about" class="about">
+      <h2 class="about__title">
+        Kto zrobił Pop It?
+      </h2>
+      <p class="about__text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis,
+        voluptatibus repellat, non veniam perferendis soluta quo ullam quas qui,
+        delectus veritatis dolores vero quam sunt quisquam nam error architecto
+        id! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis,
+        voluptatibus repellat, non veniam perferendis soluta quo ullam quas qui,
+        delectus veritatis dolores vero quam sunt quisquam nam error architecto
+        id!
       </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    </div>
+    <div id="products" class="products">
+      <h2 class="products__title">Co jest dostępne w naszym sklepie?</h2>
+      <div class="products__list">
+        <div class="products__card">
+          <img class="products__image" src="./round.png" alt="round pop" />
+          <p class="products__desc">Sprawdź okrąglaka</p>
+          <button class="button button--basic">Zamów</button>
+        </div>
+        <div class="products__card">
+          <img class="products__image" src="./square.png" alt="squere pop" />
+          <p class="products__desc">Sprawdź kwadratowego</p>
+          <button class="button button--basic">Zamów</button>
+        </div>
+        <div class="products__card">
+          <img class="products__image" src="./amongus.png" alt="amongus pop" />
+          <p class="products__desc">Sprawdź Amongusa</p>
+          <button class="button button--basic">Zamów</button>
+        </div>
       </div>
     </div>
+    <div id="motivation" class="motivation">
+      <div class="motivation__container">
+        <h3 class="motivation__title">Motywacja Pop It</h3>
+        <p class="motivation__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aliquid
+          esse incidunt reiciendis ipsa, ea architecto quam. Est dolorem
+          mollitia at accusantium, voluptates consequuntur voluptatem ipsam
+          debitis, excepturi culpa quisquam. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Repellat saepe provident possimus, ipsa
+          dolores ex tempora aperiam molestiae assumenda perferendis tenetur,
+          vitae, eos dolorum magnam id voluptas enim. Vel, architecto.
+        </p>
+      </div>
+      <img class="motivation__image" src="./photo.jpg" alt="motivation image" />
+      <img class="motivation__background" src="./bg-grid2.png" alt="" />
+    </div>
+    <footer id="footer" class="footer">
+      <ul class="footer__list">
+        <a href="#">PopIt.pl</a>
+        <a href="#about">O nas</a>
+        <a href="#motivation">Motywacja</a>
+        <a href="https://github.com/gadzbi123">Kontakt</a>
+        <a href="#">Do góry 👆</a>
+      </ul>
+    </footer>
   </body>
 </html>

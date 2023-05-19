@@ -1,0 +1,35 @@
+.motivation {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.motivation__container {
+  width: 60%;
+  display: flex;
+
+  flex-direction: column;
+  justify-items: center;
+  padding: 5rem 5rem;
+}
+.motivation__title {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.motivation__background {
+  position: absolute;
+  z-index: -5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.motivation__image {
+  aspect-ratio: 1;
+  height: 70%;
+  flex-basis: 0;
+  border-radius: 50%;
+}
