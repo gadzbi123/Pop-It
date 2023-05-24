@@ -10,17 +10,26 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./assets/img/round.png" />
+    <link rel="shortcut icon" href="./round.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <nav class="nav">
         <ul class="nav__list">
           <a href="#">PopIt.pl</a>
-          <div class="nav__list-right nav__list-right--mobile ">
-            <a href="#about">→ O nas</a>
-            <a href="#motivation">→ Motywacja</a>
-            <a href="https://github.com/gadzbi123">→ Kontakt</a>
+          <span class="nav__mobile-button-container">
+            <span class="nav__mobile-button"></span>
+          </span>
+          <div class="nav__list-right nav__list-right--closed">
+            <a href="#about">O nas</a>
+            <a href="#motivation">Motywacja</a>
+            <a href="https://github.com/gadzbi123">Kontakt</a>
           </div>
         </ul>
       </nav>
@@ -32,8 +41,8 @@
           </h2>
           <button class="button button--unique mt-mid">Zamów!</button>
         </div>
+        <img class="header__image" src="./background.png" alt="" />
       </div>
-      <img class="header__image" src="./background.png" alt="" />
     </header>
     <div id="about" class="about">
       <h2 class="about__title">
@@ -87,11 +96,10 @@
     </div>
     <footer id="footer" class="footer">
       <ul class="footer__list">
-        <a href="#">PopIt.pl</a>
         <a href="#about">O nas</a>
         <a href="#motivation">Motywacja</a>
         <a href="https://github.com/gadzbi123">Kontakt</a>
-        <a href="#">Do góry 👆</a>
+        <a href="#">👆</a>
       </ul>
     </footer>
   </body>

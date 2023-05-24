@@ -26,5 +26,18 @@ import "./assets/img/square.png";
 
 window.onload = function() {
   //write your code here
-  document.querySelector(".nav__list").classList.add("nav__list--hidden");
 };
+document
+  .querySelector(".nav__mobile-button-container")
+  .addEventListener("click", () => {
+    document
+      .querySelector(".nav__list-right")
+      .classList.toggle("nav__list-right--closed");
+  });
+
+const navRight = document.querySelector(".nav__list-right");
+
+navRight.addEventListener("pointerleave", () => {
+  navRight.classList.add("nav__list-right--closed");
+  console.log("hola");
+});
