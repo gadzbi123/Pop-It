@@ -57,6 +57,9 @@
   .about {
     padding: 1rem 2rem;
   }
+  .about__title {
+    font-size: 2rem;
+  }
   .about__text {
     padding: 0rem 1rem;
   }
@@ -76,6 +79,11 @@
   .motivation__container {
     padding: 0.5rem 1rem;
     width: 85%;
+  }
+  .motivation__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
   }
   .motivation__image {
     aspect-ratio: 1;
